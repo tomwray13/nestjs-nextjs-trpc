@@ -1,6 +1,6 @@
 # NestJS + Trpc
 
-A super simple implementation of how one could use trpc in NestJS.
+A super simple implementation of [how one could use trpc in NestJS](https://github.com/trpc/trpc/discussions/1504).
 
 Few quick notes:
 
