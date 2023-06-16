@@ -1,15 +1,8 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "declaration": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
+    "baseUrl": ".",
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "es2017",
-    "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": "./",
+    "emitDecoratorMetadata": true,
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
@@ -18,12 +11,8 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@app/trpc-client": [
-        "libs/trpc-client/src"
-      ],
-      "@app/trpc-client/*": [
-        "libs/trpc-client/src/*"
-      ]
+      "@server/*": ["./apps/server/src/*"],
+      "@web/*": ["./apps/web/*"]
     }
   }
 }
