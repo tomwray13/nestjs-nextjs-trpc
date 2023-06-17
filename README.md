@@ -19,5 +19,5 @@ The only pre-requisites for this tutorial is that you'll need [pnpm](https://pnp
 
 ```
 pnpm install
-pnpm dev       # starts local server for both frontend and backend
+pnpm dev       # starts local server for both frontend (NextJS) and backend (NestJS)
 ```
