@@ -1,23 +1,23 @@
-# NestJS + Trpc
+# ⚡️ Full-stack type-safe pnpm monorepo with NestJS, NextJS & tRPC
 
-A super simple implementation of [how one could use trpc in NestJS](https://github.com/trpc/trpc/discussions/1504).
+This an accompanying repo to [this tutorial](https://www.tomray.dev/nestjs-nextjs-trpc) which covers how to build a full-stack, end to end type-safe pnpm monorepo with [NestJS](https://nestjs.com/), [NextJS 13](https://nextjs.org/docs) (using the new `/app` directory) & [tRPC](https://trpc.io/).
 
-Few quick notes:
+I have fallen in love with this tech stack as the developer experience is SO good! I'm pretty sure you will too 😉.
 
-- ⚠️ Not production ready! Very much a quick spin up and needs improvements.
-- Uses NestJS dependency injection
-- Uses a NestJS monorepo to show how one could easily make rpc calls between different NestJS backends
-- Setup is done in Express, tweaks required if you use Fastify
-- The trpc client is made in a NestJS library so could be accessed by multiple backends
-- 🙏 Please open a PR for any further advancements
+In particular, I love that:
+
+- It's fully end-to-end type safe
+- The tRPC server is fully integrated into NestJS, so you have access to all of NestJS's wonderful functionality like dependency injection
+- Fits really well with the NextJS 13 transition to server side rendering
+- It keeps the frontend(s) and backend project seperate, but seamlessly working together in the monorepo
+
+I also wrote this tutorial [as many people](https://github.com/trpc/trpc/discussions/1504) in the NestJS community are curious on how to use tRPC with NestJS!
+
+The only pre-requisites for this tutorial is that you'll need [pnpm](https://pnpm.io/installation) and the [NestJS CLI](https://docs.nestjs.com/cli/overview) installed on your machine.
 
 ## Give it a spin:
 
 ```
-npm install
-
-nest start server -w
-nest start client -w
+pnpm install
+pnpm dev       # starts local server for both frontend and backend
 ```
-
-Make a request to `localhost:4000` - this controller uses a service which makes an trpc procedure call and returns the response.
