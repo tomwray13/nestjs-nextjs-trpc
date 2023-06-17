@@ -72,6 +72,8 @@ importers:
 
   apps/web:
     specifiers:
+      '@trpc/client': ^10.30.0
+      '@trpc/server': ^10.30.0
       '@types/node': 18.11.18
       '@types/react': 18.2.12
       '@types/react-dom': 18.2.5
@@ -85,6 +87,8 @@ importers:
       tailwindcss: 3.3.2
       typescript: ^4.7.4
     dependencies:
+      '@trpc/client': 10.30.0_@trpc+server@10.30.0
+      '@trpc/server': 10.30.0
       '@types/node': 18.11.18
       '@types/react': 18.2.12
       '@types/react-dom': 18.2.5
@@ -1191,6 +1195,14 @@ packages:
     resolution: {integrity: sha512-sJ902EfIzn1Fa+qYmjdQqh8tPsoxyBz+8yBKC2HKUxyezKJFwPGOn7pv4WY6QuQW//ySQi5lJjA/ZT9sNWWNTg==}
     dependencies:
       tslib: 2.5.3
+    dev: false
+
+  /@trpc/client/10.30.0_@trpc+server@10.30.0:
+    resolution: {integrity: sha512-utz0qRI4eU3QcHvBwcSONEnt5pWR3Dyk4VFJnySHysBT6GQRRpJifWX5+RxDhFK93LxcAmiirFbYXjZ40gbobw==}
+    peerDependencies:
+      '@trpc/server': 10.30.0
+    dependencies:
+      '@trpc/server': 10.30.0
     dev: false
 
   /@trpc/server/10.30.0:
