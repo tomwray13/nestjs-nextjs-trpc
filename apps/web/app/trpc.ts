@@ -4,7 +4,7 @@ import { AppRouter } from "@server/trpc/trpc.router";
 export const trpc = createTRPCProxyClient<AppRouter>({
   links: [
     httpBatchLink({
-      url: "http://localhost:4000/trpc", // you should update this to use env variables
+      url: `${process.env.NEXT_PUBLIC_NESTJS_SERVER}/trpc`, // TODO: use env var
     }),
   ],
 });
