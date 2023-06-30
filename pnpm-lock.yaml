@@ -14,6 +14,7 @@ importers:
       '@nestjs/platform-express': ^9.0.0
       '@nestjs/schematics': ^9.0.0
       '@nestjs/testing': ^9.0.0
+      '@trpc/server': ^10.33.0
       '@types/express': ^4.17.13
       '@types/jest': 29.2.4
       '@types/node': 18.11.18
@@ -35,13 +36,16 @@ importers:
       tsconfig-paths: 4.1.1
       typescript: ^4.7.4
       webpack: ^5.0.0
+      zod: ^3.21.4
     dependencies:
       '@nestjs/common': 9.4.3_atc7tu2sld2m3nk4hmwkqn6qde
       '@nestjs/config': 3.0.0_dk4u2lifzsfgc7wmi6hz7mkv5a
       '@nestjs/core': 9.4.3_c4fgdp752ib7dsgrlnt7fswfce
       '@nestjs/platform-express': 9.4.3_vw2vky2jc6gkm6gj7lzrgmojyi
+      '@trpc/server': 10.33.0
       reflect-metadata: 0.1.13
       rxjs: 7.8.1
+      zod: 3.21.4
     devDependencies:
       '@nestjs/cli': 9.5.0
       '@nestjs/schematics': 9.2.0_typescript@4.9.5
@@ -1188,6 +1192,10 @@ packages:
     resolution: {integrity: sha512-sJ902EfIzn1Fa+qYmjdQqh8tPsoxyBz+8yBKC2HKUxyezKJFwPGOn7pv4WY6QuQW//ySQi5lJjA/ZT9sNWWNTg==}
     dependencies:
       tslib: 2.6.0
+    dev: false
+
+  /@trpc/server/10.33.0:
+    resolution: {integrity: sha512-3EN7hiYFy1FsMqGIHEkRqtjxLhTRc/E73mdE+F/vqJWNwigM8UmAvZgFC0YTw87PYpztYzA1vxxK7LQfhXHeog==}
     dev: false
 
   /@tsconfig/node10/1.0.9:
