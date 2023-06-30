@@ -1,3 +1,0 @@
-packages:
-  # all apps in direct subdirs of apps/
-  - "apps/*"
