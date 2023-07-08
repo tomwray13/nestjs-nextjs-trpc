@@ -17,6 +17,14 @@ The only pre-requisites for this tutorial is that you'll need [pnpm](https://pnp
 
 ## Give it a spin:
 
+First make sure you add an `.env.local` file inside the `web` app with the following variable:
+
+```env
+NEXT_PUBLIC_NESTJS_SERVER=http://localhost:4000
+```
+
+Then install the dependencies:
+
 ```
 pnpm install
 pnpm dev       # starts local server for both frontend (NextJS) and backend (NestJS)
