@@ -32,7 +32,7 @@ jobs:
         run: pnpm install
       - name: Copy .env
         run: cp apps/web/.env.example apps/web/.env
-      - name: Build
-        run: pnpm run build
-      - name: Test
-        run: pnpm test:cov
+      - name: Build Server
+        run: pnpm run build:server
+      - name: Build Web
+        run: npx start-server-and-test start:server http://localhost:4000 build:web
