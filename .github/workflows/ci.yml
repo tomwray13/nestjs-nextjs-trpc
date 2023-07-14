@@ -37,4 +37,4 @@ jobs:
       - name: Build Web
         run: npx start-server-and-test start:server http://localhost:4000 build:web
       - name: Build Admin
-        run: npx start-server-and-test start:server http://localhost:8080 build:admin
+        run: npx start-server-and-test start:server http://localhost:4000 build:admin
