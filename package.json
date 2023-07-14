@@ -13,9 +13,31 @@
     "preinstall": "npx only-allow pnpm",
     "test": "pnpm run --filter server test",
     "test:e2e": "pnpm run --filter server test:e2e",
-    "test:cov": "pnpm run --filter server test:cov"
+    "test:cov": "pnpm run --filter server test:cov",
+    "prepare": "husky install",
+    "lint": "npx eslint . --fix"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "13.2.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npx eslint --fix",
+      "npx prettier --write"
+    ],
+    "*.{json,md,yml}": [
+      "npx prettier --write"
+    ],
+    "*.{css,scss}": [
+      "npx stylelint --fix",
+      "npx prettier --write"
+    ],
+    "*.{graphql,gql}": [
+      "npx prettier --write"
+    ]
+  }
 }
