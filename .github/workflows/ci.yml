@@ -30,6 +30,8 @@ jobs:
           cache: "pnpm"
       - name: Install dependencies
         run: pnpm install
+      - name: Copy .env
+        run: cp apps/web/.env.example apps/web/.env
       - name: Build
         run: pnpm run build
       - name: Test
