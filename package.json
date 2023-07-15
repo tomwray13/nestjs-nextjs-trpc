@@ -18,7 +18,11 @@
   "devDependencies": {
     "@flydotio/dockerfile": "^0.3.3",
     "husky": "^8.0.0",
-    "lint-staged": "13.2.3"
+    "lint-staged": "13.2.3",
+    "@nestjs/cli": "^9.5.0",
+    "@angular-devkit/build-angular": "^16.1.1",
+    "@angular/cli": "~16.1.1",
+    "@angular/compiler-cli": "^16.1.0"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
