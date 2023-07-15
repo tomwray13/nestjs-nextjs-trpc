@@ -11,7 +11,7 @@ export class TrpcRouter {
     hello: this.trpc.procedure
       .input(z.object({ name: z.string().optional() }))
       .query(({ input }) => {
-        return `Hello ${input.name ? input.name : `Bilbo`}`;
+        return `Hello ${input.name ? input.name : `Ángel`}`;
       }),
   });
 
