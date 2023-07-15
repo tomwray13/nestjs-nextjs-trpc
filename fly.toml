@@ -1,0 +1,15 @@
+# fly.toml app configuration file generated for white-silence-9164 on 2023-07-15T01:05:27-05:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "white-silence-9164"
+primary_region = "bog"
+
+[http_service]
+  internal_port = 4000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
